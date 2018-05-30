@@ -20,7 +20,7 @@ namespace LumosApi.Controllers
 		}
 
 		[HttpPost]
-		public bool Post()
+		public bool Post(int bulbId)
 		{
 			return true;
 		}
