@@ -40,6 +40,7 @@ namespace LumosApi
                 app.UseDeveloperExceptionPage();
             }
 
+			app.InitialiseBulbs();
             app.UseMvc();
         }
     }

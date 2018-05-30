@@ -10,11 +10,10 @@ namespace LumosApi.Core
 {
     public static class LumosStartupExtensions
     {
-		public static IApplicationBuilder HandshakeBulbs(this IApplicationBuilder app)
+		public static void InitialiseBulbs(this IApplicationBuilder app)
 		{
-			var bulbHandshake = app.ApplicationServices.GetRequiredService<BulbService>();
-
-			return app;
+			var bulbService = app.ApplicationServices.GetRequiredService<BulbService>();
+			bulbService.InitialiseBulbs();
 		}
     }
 }

@@ -15,6 +15,8 @@ namespace LumosApi.Controllers
 		[HttpGet]
 		public IEnumerable<Bulb> Get()
 		{
+			List<Bulb> bulbs = new List<Bulb>();
+
 			// Return all bulb statuses
 			return new List<Bulb>();
 		}

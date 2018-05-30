@@ -1,4 +1,5 @@
-﻿using LumosApi.Models;
+﻿using LifxNet;
+using LumosApi.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,6 @@ namespace LumosApi.Core
 		{
 		}
 
-		public DbSet<Bulb> Bulbs { get; set; }
+		public DbSet<LightBulb> Bulbs { get; set; }
 	}
 }
