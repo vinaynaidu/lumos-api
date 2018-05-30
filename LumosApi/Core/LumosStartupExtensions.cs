@@ -12,7 +12,7 @@ namespace LumosApi.Core
     {
 		public static void InitialiseBulbs(this IApplicationBuilder app)
 		{
-			var bulbService = app.ApplicationServices.GetRequiredService<BulbService>();
+			var bulbService = app.ApplicationServices.GetRequiredService<BulbStartupService>();
 			bulbService.InitialiseBulbs();
 		}
     }

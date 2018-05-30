@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LifxNet;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,5 +15,11 @@ namespace LumosApi.Models
 		public string Version { get; set; }
 
 		public Colour Colour { get; set; }
+		
+		public Bulb(LightBulb b)
+		{
+			this.Version = b.HostName;
+		}
+
 	}
 }

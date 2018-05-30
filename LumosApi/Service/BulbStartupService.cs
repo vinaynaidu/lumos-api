@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace LumosApi.Service
 {
-	public class BulbService
+	public class BulbStartupService
 	{
 		static LifxClient client;
 		private readonly LumosContext context;
 
-		public BulbService(LumosContext lumosContext)
+		public BulbStartupService(LumosContext lumosContext)
 		{
 			context = lumosContext;			
 		}
